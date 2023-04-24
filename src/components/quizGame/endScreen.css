@@ -1,0 +1,27 @@
+.endScreen {
+    text-align: center;
+}
+
+.endScreen__trophy {
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.endScreen__stat {
+    margin: 1rem;
+}
+
+.endScreen__stat_label {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.endScreen__stat_value {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.endScreen__button {
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+}

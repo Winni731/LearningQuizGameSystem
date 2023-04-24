@@ -1,0 +1,37 @@
+.container {
+   /* position: absolute;
+   left: 50%; 
+   top: 40%; */
+   /* transform: translate(-50%, -50%); */
+   height: 100vh;
+   background: transparent;
+   /* filter: contrast(30); */
+}
+
+.text {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    font-size: 80px;
+    color: white;
+    transform: translate(-50%, -50%); 
+    animation: showup 3s forwards;
+}
+@keyframes showup {
+    from {
+        letter-spacing: -50px;
+        filter: blur(15px);
+    }
+    to {
+        letter-spacing: 10px;
+        filter: blur(0.5px);
+    }
+}
+
+.button {
+    position: absolute;
+    left: 50%; 
+    top: 60%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+}

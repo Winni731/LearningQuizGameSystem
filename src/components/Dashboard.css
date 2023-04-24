@@ -1,0 +1,21 @@
+.verticalAlign {
+    display: flex;
+    margin-top: 10px;
+    /* align-items: center;
+    justify-content: center;
+    flex-direction: row; */
+}
+
+.sidebar {
+    width: 15.5%;
+    height: inherit;
+    justify-content: "space-between";
+    /* background-color: grey; */
+}
+
+.allQuizzes {
+    width: 84.5%;
+    height: inherit;
+    background-color: rgb(229, 244, 249);
+    margin-left: 5px;
+}

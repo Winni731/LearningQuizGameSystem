@@ -1,0 +1,24 @@
+.startScreen {
+    text-align: center;
+  }
+  
+  .startScreen__description {
+    font-size: 1.2rem;
+  }
+  
+  .startScreen__detail_list {
+    margin-top: 0;
+    text-align: left;
+    display: inline-block;
+  }
+  
+  .startScreen__play_button {
+    display: block;
+    margin: 0 auto;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+  }
+
+  .startScreen__play_button:hover {
+    cursor: pointer;
+  }
