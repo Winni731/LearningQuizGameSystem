@@ -27,9 +27,6 @@ function Navbar({ search, setSearch }) {
         }
     };
 
-    // const goToCart = () => {
-    //     navigate("/user/cart");
-    // };
 
     const goToPage = (e) => {
         const val = e.target.value;
@@ -39,21 +36,6 @@ function Navbar({ search, setSearch }) {
                 case "home":
                     navigate("/user/dashboard");
                     break;
-                // case "profile":
-                //     navigate("/user/profile");
-                //     break;
-                // case "orders":
-                //     navigate("/user/orderhistory");
-                //     break;
-                // case "wishlist":
-                //     navigate("/user/wishlist");
-                //     break;
-                // case "admin":
-                //     navigate("/admin/portal");
-                //     break;
-                // case "flyer":
-                //     navigate("/flyer");
-                //     break;
                 case "signout":
                     logout();
                     break;
@@ -62,7 +44,7 @@ function Navbar({ search, setSearch }) {
             }
         } else if (!currentUser && val === "home") {
             navigate("/");
-        } else navigate("/login");
+        } else navigate("/");
     };
 
     useEffect(() => {
@@ -134,17 +116,10 @@ function Navbar({ search, setSearch }) {
                             <MenuItem value="userTitle" disabled>
                                 {userTitle}
                             </MenuItem>
-                            {/* <MenuItem value="profile">Your Profile</MenuItem>
-                            <MenuItem value="orders">Your Orders</MenuItem> */}
-                            {/* {userFields?.level === "admin" && <MenuItem value="admin">Admin Portal</MenuItem>} */}
                             {currentUser && <MenuItem value="signout">Sign out</MenuItem>}
                             {!currentUser && <MenuItem value="signin">Sign in</MenuItem>}
                         </Select>
                     </FormControl>
-                    {/* <Button onClick={goToCart} variant="contained">
-                        <ShoppingCart />
-                        {itemCount}
-                    </Button> */}
                 </Toolbar>
             </AppBar>
         </>
